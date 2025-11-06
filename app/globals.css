@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --background: #fdfaf5;
+  --foreground: #1a130b;
+}
+
+body {
+  @apply bg-parchment-50 text-parchment-900 font-body antialiased;
+}
+
+a {
+  @apply text-parchment-700 underline decoration-dotted hover:text-parchment-900;
+}
+
+.prose blockquote {
+  @apply border-parchment-400;
+}
+
+.gradient-overlay {
+  background: radial-gradient(circle at top left, rgba(192, 155, 84, 0.3), transparent 60%),
+    radial-gradient(circle at bottom right, rgba(96, 67, 32, 0.3), transparent 55%);
+}
